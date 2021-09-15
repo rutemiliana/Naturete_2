@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Naturete</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Rute Miliana"/>
+		<meta name="keywords" content="sabonete, sabonete de argila, argila, sabonete natural"/>
+		<meta name="description" content="Sabonete natural de argila"/>
+        <link rel="stylesheet" type="text/css" href="style.css.css"/>
+    </head>
+    <body>
+        <nav>  
+            <a class="a-menu" href="#">Home</a>
+            <a class="a-menu" href="#sobre">Sobre</a>
+            <a class="a-menu" href="#produtos">Produtos</a>
+            <a class="a-menu" href="#encomendas">Encomendas</a>
+        </nav>
+        <header>
+            <img src="img/banner.png" alt="banner contendo a logo da loja naturete"/>
+        </header> 
+
+        <article id="sobre">
+            <h1>Naturete</h1>
+            <p>Naturete é uma loja destinada a produção e venda de sabonetes naturais de argila. Atualmente trabalhamos com cinco tipos de argila: argila branca, preta, rosa, verde e vermelha.  </p> 
+            <p>A argila branca serve para remover manchas na pele e cicatrizes. Argila preta, também conhecida como lama vulcânica, é a mais indicada para desintoxicação da pele. Possui ação anti-inflamatória pela alta concentração de alumínio e silício. Argila rosa é indicada para peles mais delicadas, que se irritam facilmente. Apresenta propriedades cicatrizantes e suavizantes.A argila verde é a mais indicada para peles acneicas e oleosas devido ao seu efeito adstringente, secativo e bactericida.Argila vermelha é indicada para peles extremamente sensíveis. É rica em óxido de ferro e cobre (minerais anti-inflamatórios) e auxilia também na elasticidade e textura da pele. </p>  
+
+        </article>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+                <p>Temos sabonetes de argila branca, preta, rosa e verde. Esses são os kits disponíveis:</p>
+            
+            <div id="container">
+                <div class="card">
+                    <img src="img/kit1.jpg"  alt=""/>
+                    <div class="card-content">
+                        <p> <span id="txt-preto">2 tipos de sabonetes     </span> </p>
+                        <p>  R$ 20,00</p>
+                    </div>
+                </div>
+                        
+                <div class="card">
+                    <img src="img/kit2.jpg"  alt=""/>
+                    <div class="card-content">
+                        <p> <span id="txt-preto">2 tipos de sabonetes</span></p>
+                        <p>R$ 20,00</p>   
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="img/kit3.jpg"  alt=""/>
+                    <div class="card-content">
+                        <p> <span id="txt-preto">4 tipos de sabonetes</span></p>
+                        <p>R$ 20,00</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/kit4.jpg"  alt=""/>
+                    <div class="card-content">
+                        <p> <span id="txt-preto">5 tipos de sabonetes</span></p>
+                        <p>R$ 20,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="encomendas">
+            <h2>Encomendas</h2>
+
+            <form name="" method="" action="">
+
+            <label for="nome">Nome:</label><br/>
+            <input id="nome" type="text" name="nome" size="80" placeholder="Digite seu nome completo" required/>
+
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" name="email" size="80" placeholder="nomedeusuario@email.com"/>
+      
+            <label for="nivel">Produto:</label><br>
+			    <select id="produto" name="nivel" size>
+                    <option value="Selecione">Selecione</option>
+                    <option value="kit1">Kit 1</option>
+                    <option value="kit2">Kit 2</option>
+                    <option value="kit3">Kit 3</option>
+                    <option value="kit4">Kit 4</option>
+                </select>
+
+            <label for="aulas">Quantidade</label><br>
+            <input id="aulas" type="number" name="aulas" min="1" max="10" step="1" size="80" placeholder="Somente números" /><br>
+                
+            <fieldset>
+                <legend>Forma de retirada</legend>
+                <input id="delivery" type="radio" name="retirada" value="delivery"/> <label for="delivery">Delivery</label><br>
+                <input id="loja" type="radio" name="retirada" value="loja"/> <label for="loja">Loja Naturete</label>
+            </fieldset><br>
+                
+            <label for="msg">Comentários:</label><br>
+                <textarea id="msg" cols="80" rows="4">
+                </textarea>
+            
+            <div id="botoes-form">
+                <input type="submit" name="btn-encomendar" value="ENCOMENDAR"/>
+                <input type="reset" name="btn-cancelar" value="CANCELAR">
+            </div>
+            </form>
+        </section>
+          
+        <footer>
+			<p>Desenvolvido por <a href="https://github.com/rutemiliana" target="_blank">Rute Miliana</a> - 2021</p>
+		</footer>
+			
+			
+
+      
+
+  </body>
+</html>
